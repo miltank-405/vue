@@ -7,3 +7,14 @@ var app = new Vue ({
 });
 // 上記のDOMを更新
 app.message = 'I have change the data!';
+// これでhtmlを直接操作する必要がなくなった
+
+// #app-2
+var app2 = new Vue({
+	el: '#app-2',
+	data: {
+		message: 'You loaded this page on' + new Date().toLocaleString()
+	}
+})
+// consoleに▼を打ち込むとtitle属性が更新される
+// app2.message = 'some new message';
