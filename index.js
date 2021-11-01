@@ -18,3 +18,12 @@ var app2 = new Vue({
 })
 // consoleに▼を打ち込むとtitle属性が更新される
 // app2.message = 'some new message';
+
+// 要素の有無の切り替え
+var app3 = new Vur ({
+	el: '#app-3',
+	data: {
+		seen: true
+		// seen: false ←コンソールに入力すると、メッセージが消える
+	}
+})
