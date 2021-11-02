@@ -42,3 +42,19 @@ var app4 = new Vue ({
 		]
 	}
 })
+
+// v-onでメソッドの呼び出し
+var app5 = new Vue ({
+	el: '#app-5',
+	data: {
+		message: 'Hello Vue.js!'
+	},
+	methods: {
+		reverseMessage: function () {
+			// button押すと文字列が逆に表示される
+			// もう一回押すと戻る
+			this.message = this.message.split('').reverse().join('')
+			// このメソッドの中ではDOM操作はやってない。
+		}
+	}
+})
