@@ -20,10 +20,25 @@ var app2 = new Vue({
 // app2.message = 'some new message';
 
 // 要素の有無の切り替え
-var app3 = new Vur ({
+var app3 = new Vue ({
 	el: '#app-3',
 	data: {
 		seen: true
 		// seen: false ←コンソールに入力すると、メッセージが消える
+	}
+})
+
+// v-forでリストを表示
+var app4 = new Vue ({
+	el: '#app-4',
+	data: {
+		todos: [
+			{ text: 'Learn JavaScript' },
+			{ text: 'Learn Vue' },
+			{ text: 'Build something awesome' }
+			// consoleに
+			// app4.todos.push({ text: 'New item' })を入力すると
+			// 4番目のリストが表示される
+		]
 	}
 })

@@ -30,6 +30,15 @@
 		</span>
 	</div>
 
+	<!-- v-forを使ってアイテムのリストを配列内のデータを使って表示 -->
+	<div id="app-4">
+		<ol>
+			<li v-for="todo in todos">
+				{{ todo.text }}
+			</li>
+		</ol>
+	</div>
+
 
 
 	<script src="index.js"></script>
