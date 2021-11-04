@@ -72,6 +72,17 @@
 		</ol>
 	</div>
 
+	<!-- テンプレート構文 -->
+	<span>Message: {{ msg }}</span>
+	<!-- v-onceを使うとデータ変更時の更新はなくて、一回だけ展開可能。
+		ただし、同じノードの他のバインディングが影響を受けるから要注意 -->
+	<span v-once>This will never change: {{ msg }}</span>
+
+
+
+
+
+
 	<script src="index.js"></script>
 </body>
 </html>
